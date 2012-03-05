@@ -9,7 +9,6 @@ import java.util.Map;
 
 import freemarker.template.Configuration;
 import freemarker.template.DefaultObjectWrapper;
-import freemarker.template.ObjectWrapper;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
 
@@ -18,8 +17,8 @@ public class TestFreeMarker {
 	public static void main(String[] args) {
 		Configuration cfg = new Configuration();
 		try {
-			System.out.println(ClassLoader.getSystemResource("mail").getPath());
-			cfg.setDirectoryForTemplateLoading(new File(ClassLoader.getSystemResource("mail").getPath()));
+			System.out.println(ClassLoader.getSystemResource("freemarker/mail").getPath());
+			cfg.setDirectoryForTemplateLoading(new File(ClassLoader.getSystemResource("freemarker/mail").getPath()));
 			cfg.setObjectWrapper(new DefaultObjectWrapper());
 			
 			Template temp = cfg.getTemplate("test.ftl");
