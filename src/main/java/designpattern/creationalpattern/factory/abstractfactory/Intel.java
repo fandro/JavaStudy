@@ -11,7 +11,6 @@ public class Intel implements MotherBoard{
 
 	}
 
-	@Override
 	public boolean startRun(CPU cpu, RAM ram, HardDisk hd, Monitor monitor) {
 		return true;
 	}

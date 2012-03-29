@@ -8,7 +8,6 @@ public class Men implements Person {
 		this.clothing = clothing;
 	}
 	
-	@Override
 	public void doDress() {
 		System.out.print("men ");
 		clothing.dress();

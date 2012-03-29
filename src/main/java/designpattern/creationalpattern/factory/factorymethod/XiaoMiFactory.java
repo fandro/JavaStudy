@@ -7,7 +7,6 @@ package designpattern.creationalpattern.factory.factorymethod;
  */
 public class XiaoMiFactory implements PhoneFactory {
 
-	@Override
 	public Phone produce() {
 		return new XiaoMi();
 	}

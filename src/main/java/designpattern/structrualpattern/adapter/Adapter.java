@@ -8,7 +8,6 @@ public class Adapter implements Target {
 		this.adaptee=adaptee;
 	}
 
-	@Override
 	public void targetMethod() {
 		adaptee.adapteeMethod();
 		System.out.println("Adapter Method!!");
