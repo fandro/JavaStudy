@@ -9,14 +9,17 @@
 			classpath:applicationContext.xml
 		</param-value>
 	</context-param>
+	
 	<!-- spring容器启动listener -->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
+	
 	<listener>
 		<description>如果web应用使用了OpenSessionInViewFilter,那么这个配置也是必不可少的</description>
 		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
 	</listener>
+	
 	<filter>
 		<description>
 			处理hibernate的session延迟加载的问题
@@ -74,7 +77,7 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>controller-servlet</servlet-name>
-		<url-pattern>/*</url-pattern>
+		<url-pattern>*</url-pattern>
 	</servlet-mapping>
 
 	<session-config>
