@@ -1,4 +1,6 @@
-package net.jcip.examples;
+package net.jcip.examples.s3;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * NoVisibility
@@ -14,8 +16,10 @@ public class NoVisibility {
 
     private static class ReaderThread extends Thread {
         public void run() {
-            while (!ready)
+            while (!ready){
+            	System.out.println("----");
                 Thread.yield();
+             }
             System.out.println(number);
         }
     }
