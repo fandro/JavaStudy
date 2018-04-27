@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="adapter" size="1202,623" metadata="uml2-1.0" initialized="true" scrolledY="15" tag="1000" key="32303037303533312D31303030204A61766153747564792F6675776569626F">
+  <children xsi:type="editmodel:NotepadEditModel" location="65,66" size="109,24" fontInfo="Arial-8-0" note="目标角色(target)"/>
+  <children xsi:type="editmodel:NotepadEditModel" location="630,270" size="132,24" fontInfo="Arial-8-0" note="被适配角色(adaptee)"/>
+  <children xsi:type="editmodel:NotepadEditModel" location="95,270" size="148,24" fontInfo="Arial-8-0" note="适配器角色（Adapter）"/>
+  <children xsi:type="editmodel:NotepadEditModel" location="30,345" size="329,138" fontInfo="Arial-10-0" note="在 GoF 的经典著作《设计模式》中指出： &#xD;&#xA;Adapter 模式的目的就是将类的接口转换&#xD;&#xA;成客户对象需要的接口， Adapter 模式使&#xD;&#xA;原本不相容的接口变的相容。也就是说我们&#xD;&#xA;有一个可以满足我们需要的对象，但是她的&#xD;&#xA;接口却不是象我们所期望的那样，而我们现&#xD;&#xA;在所需要的就是创建一个新的接口，让原本&#xD;&#xA;的接口能够满足我们的需要。"/>
+  <children xsi:type="editmodel:NotepadEditModel" location="735,195" size="269,24" fontInfo="Arial-8-0" note="客户端角色(Client)与符合Target接口的对象协同"/>
+  <children xsi:type="editmodel:NotepadEditModel" location="30,495" size="408,108" fontInfo="Arial-8-0" note="1.Target： 定义Client使用的与特定领域相关的接口。&#xD;&#xA;2.客户端角色(Client)：与符合Target接口的对象协同&#xD;&#xA;3.被适配角色(adaptee)： 定义一个已经存在的接口，这个接口需要适配。&#xD;&#xA;4.适配器角色Adapter ：对Adaptee的接口与Target接口进行适配&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
+  <children xsi:type="editmodel:ClassEditModel" name="Adaptee" location="116,146" size="127,67" id="designpattern.structrualpattern.adapter/Adaptee">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="104,18">
+      <children xsi:type="editmodel:MethodEditModel" name="adapteeMethod" id="designpattern.structrualpattern.adapter/Adaptee#adapteeMethod()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Adapter" location="345,215" size="116,85" id="designpattern.structrualpattern.adapter/Adapter">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="93,36">
+      <children xsi:type="editmodel:MethodEditModel" name="Adapter" id="designpattern.structrualpattern.adapter/Adapter#Adapter(Ldesignpattern.structrualpattern.adapter.Adaptee;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="targetMethod" id="designpattern.structrualpattern.adapter/Adapter#targetMethod()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="designpattern.structrualpattern.adapter/Target&lt;-designpattern.structrualpattern.adapter/Adapter" source="//@children.7" target="//@children.9" targetEnd="//@children.7/@sourceConnections.0/@children.1" sourceEnd="//@children.7/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="110,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="5,81"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Main" location="600,212" size="75,67" id="designpattern.structrualpattern.adapter/Main">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="52,18">
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="designpattern.structrualpattern.adapter/Main#main([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.7/@sourceConnections.0" name="Target" location="450,66" size="116,81" id="designpattern.structrualpattern.adapter/Target">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="93,18">
+      <children xsi:type="editmodel:MethodEditModel" name="targetMethod" id="designpattern.structrualpattern.adapter/Target#targetMethod()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=1;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
