@@ -1,9 +1,9 @@
 package net.jcip.examples;
 
+import junit.framework.TestCase;
+
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;
-
-import junit.framework.TestCase;
 
 /**
  * PutTakeTest

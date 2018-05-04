@@ -1,4 +1,4 @@
-package java.thread;
+package javacore.thread;
 
 public class Main {
 

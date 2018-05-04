@@ -1,4 +1,4 @@
-package java.thread.stampedlock;
+package javacore.thread.stampedlock;
 
 
 import java.lang.reflect.Field;
