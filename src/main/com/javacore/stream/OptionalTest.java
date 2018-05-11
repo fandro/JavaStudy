@@ -1,4 +1,4 @@
-package javacore.lambda;
+package javacore.stream;
 
 /**
  * TODO
