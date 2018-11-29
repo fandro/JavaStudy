@@ -1,7 +1,7 @@
 package designpattern.creationalpattern.factory.factorymethod;
 
 /**
- * The Class Main.
+ * The Class ThreadMain.
  * @uml.dependency   supplier="creationalpattern.factory.factorymethod.Phone"
  */
 public class Main {
@@ -14,16 +14,16 @@ public class Main {
 	public static void main(String[] args) {
 		PhoneFactory phoneFactory;
 		Phone phone;
-		//Ê¹ÓÃIphone´òµç»°
+		//Ê¹ï¿½ï¿½Iphoneï¿½ï¿½ç»°
 		phoneFactory = new IphoneFactory();
-		//ÐÞ¸ÄÎªÐ¡Ã×ÊÖ»ú´òµç»°
+		//ï¿½Þ¸ï¿½ÎªÐ¡ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ç»°
 		//phoneFactory = new XiaoMiFactory();
 		phone= phoneFactory.produce();
 		phone.call();
 		
 		/**
-		 * ´ÓÉÏÃæ¿ÉÒÔ¿´³ö±ä»¯µãÊÇFactoryµÄÊµÏÖÀà(IphoneFactoryºÍXiaoMiFactory),
-		 * ÈçºÎÐÂÔöMotoFactory,Ö»ÐèÒªÌæ»»IphoneFactory()»òXiaoMiFactory(),ÆäËû¶¼²»ÐèÒª±ä¶¯
+		 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½ï¿½ä»¯ï¿½ï¿½ï¿½ï¿½Factoryï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½(IphoneFactoryï¿½ï¿½XiaoMiFactory),
+		 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½MotoFactory,Ö»ï¿½ï¿½Òªï¿½æ»»IphoneFactory()ï¿½ï¿½XiaoMiFactory(),ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ä¶¯
 		 */
 	}
 

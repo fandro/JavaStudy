@@ -1,7 +1,8 @@
 package javacore.thread;
 
-public class Main {
+public class ThreadMain {
 
 	public static String  name;
-	
+
+
 }

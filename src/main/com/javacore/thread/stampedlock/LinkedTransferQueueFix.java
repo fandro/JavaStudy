@@ -195,7 +195,7 @@ public class LinkedTransferQueueFix<E> extends AbstractQueue<E>
      * explicit counts across method calls slightly simplifies an
      * already-messy implementation. Using randomization would
      * probably work better if there were a low-quality dirt-cheap
-     * per-thread one available, but even ThreadLocalRandom is too
+     * per-thread one available, but even ThreadLocalRandomTest is too
      * heavy for these purposes.
      *
      * With such a small slack threshold value, it is not worthwhile
@@ -1074,7 +1074,7 @@ public class LinkedTransferQueueFix<E> extends AbstractQueue<E>
     }
 
     /**
-     * Main implementation of remove(Object)
+     * ThreadMain implementation of remove(Object)
      */
     private boolean findAndRemove(Object e) {
         if (e != null) {
