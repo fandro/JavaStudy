@@ -50,7 +50,7 @@ import java.util.stream.Stream;
  *      4. https://blog.csdn.net/walkerjong/article/details/50633474
  *      5. https://www.cnblogs.com/CarpenterLee/p/6550212.html
  *  </pre>
- * @author fuwb
+ * @author feako
  * @date 2018/4/27
  */
 public class StreamTest {
@@ -153,7 +153,9 @@ public class StreamTest {
     }
 
     /**
-     * p eek如同foreach只是不会中断流操作
+     * peek如同foreach只是不会中断流操作,
+     * peek 传参是consumer, 保持原对象不变,
+     * map 传参是function，需要返回新对象
      */
     @Test
     public void peekTest() {

@@ -1,4 +1,4 @@
-package javacore.thread;
+package javacore.concurrent.thread;
 
 public class ThreadMain {
 

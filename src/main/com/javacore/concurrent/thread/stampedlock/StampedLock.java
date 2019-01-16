@@ -1,4 +1,4 @@
-package javacore.thread.stampedlock;
+package javacore.concurrent.thread.stampedlock;
 
 
 import java.util.concurrent.TimeUnit;

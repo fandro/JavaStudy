@@ -1,23 +1,27 @@
-package javacore.thread.threadlocal.threadpool;
+package javacore.concurrent.thread.threadlocal.threadpool;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * 线程池和ThreadLocal
  *
- * @author fuwb
+ * @author feako
  * @date 2018/11/28
  */
 public class ThreadLocalAndThreadPool {
 
-    private static ThreadLocal<AtomicInteger> t = new ThreadLocal<AtomicInteger>(){
+    // 初始值1
+    private static ThreadLocal<AtomicInteger> threadLocal = new ThreadLocal<AtomicInteger>(){
         @Override
         protected AtomicInteger initialValue() {
             return new AtomicInteger(0);
         }
     };
+    // 初始值2
+    private static ThreadLocal<AtomicLong> threadLocalLong = ThreadLocal.withInitial(()->new AtomicLong(0));
 
     public static void main(String[] args) {
         ExecutorService executorService = Executors.newFixedThreadPool(2);
@@ -32,7 +36,7 @@ public class ThreadLocalAndThreadPool {
 
         @Override
         public void run() {
-            AtomicInteger atomicInteger = t.get();
+            AtomicInteger atomicInteger = threadLocal.get();
             // 返回的是 atomicInteger的值
             int andIncrement = atomicInteger.getAndIncrement();
             System.out.println(andIncrement);

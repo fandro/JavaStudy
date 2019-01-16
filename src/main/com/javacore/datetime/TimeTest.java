@@ -35,7 +35,7 @@ import java.util.TimeZone;
  *     Java8的时间API，抽象了时间的概念，用Temporal和TemporalAccessor来定义了时间的基石，划分抽象了和基石相关的时间关系，时间单位TemporalUnit，时间字段TemporalField，时间量TemporalAmount，把这些抽象接口理顺了...会发现用Java8时间API几乎可以满足你任何时间计算，以上是个人理解，仅供参考
  * </pre>
  *
- * @author fuwb
+ * @author feako
  * @date 2017/11/16
  */
 public class TimeTest {

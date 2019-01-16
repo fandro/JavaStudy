@@ -1,4 +1,4 @@
-package javacore.thread.threadlocal;
+package javacore.concurrent.thread.threadlocal;
 
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -8,7 +8,7 @@ import java.util.concurrent.ThreadLocalRandom;
  * 所以Java并发包提供了类TheadLocalRandom，
  * 它是Random的子类，利用了ThreadLocal，它没有public的构造方法，通过静态方法current获取对象。(jdk1.7)
  *
- * @author fuwb
+ * @author feako
  * @date 2018/11/28
  */
 public class ThreadLocalRandomTest {

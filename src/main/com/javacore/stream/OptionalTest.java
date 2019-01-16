@@ -14,7 +14,7 @@ package javacore.stream;
  *  orElseThrow : 否则抛出异常
  * </pre>
  *
- * @author fuwb
+ * @author feako
  * @date 2018/4/27
  */
 public class OptionalTest {

@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
  * 1. 函数接口，接口中只有一个方法
  * 2. 参数类型推断机制
  *
- * @author fuwb
+ * @author feako
  * @date 2018/4/27
  */
 public class LambdaTest {

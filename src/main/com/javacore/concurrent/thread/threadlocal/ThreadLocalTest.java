@@ -1,4 +1,4 @@
-package javacore.thread.threadlocal;
+package javacore.concurrent.thread.threadlocal;
 
 /**
  * 也就是说这个类给线程提供了一个本地变量，这个变量是该线程自己拥有的。
@@ -6,7 +6,7 @@ package javacore.thread.threadlocal;
  * 所有的本地实例都会被GC。
  * 并且建议我们ThreadLocal最好是 private static 修饰的成员
  *
- * @author fuwb
+ * @author feako
  * @date 2018/11/26
  */
 public class ThreadLocalTest {

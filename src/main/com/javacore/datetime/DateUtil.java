@@ -66,7 +66,7 @@ public class DateUtil {
 	 *     格式B ：yyyyMMdd
 	 * </pre>
 	 *
-	 * @author fuwb
+	 * @author feako
 	 * @return 默认格式 yyyy-MM-dd
 	 */
 	public static String toAPatternDate(String dateStr) {
@@ -80,7 +80,7 @@ public class DateUtil {
 	 *     格式B ：yyyyMMdd
 	 * </pre>
 	 *
-	 * @author fuwb
+	 * @author feako
 	 * @return 默认格式 yyyy-MM-dd
 	 */
 	public static String toAPatternDate(long timeStamp) {
@@ -94,7 +94,7 @@ public class DateUtil {
 	 *     格式A ：yyyy-MM-dd HH:mm:ss
 	 *     格式B ：yyyyMMddHHmmss
 	 * </pre>
-	 * @author fuwb
+	 * @author feako
 	 * @return 默认格式 yyyy-MM-dd HH:mm:ss
 	 */
 	public static String toAPatternDateTime(String dateTimeStr) {
@@ -107,7 +107,7 @@ public class DateUtil {
 	 *     格式A ：yyyy-MM-dd HH:mm:ss
 	 *     格式B ：yyyyMMddHHmmss
 	 * </pre>
-	 * @author fuwb
+	 * @author feako
 	 * @return 默认格式 yyyy-MM-dd HH:mm:ss
 	 */
 	public static String toAPatternDateTime(long timeStamp) {
@@ -117,7 +117,7 @@ public class DateUtil {
 
 	/**
 	 * 日期时间转换为时间戳,例如：2017-10-10 --> 91948492874
-	 * @author fuwb
+	 * @author feako
 	 * @param dateTime 时间
 	 */
 	public static String toTimestamp(String dateTime) {
@@ -128,7 +128,7 @@ public class DateUtil {
 
 	/**
 	 * 日期时间转换为时间戳
-	 * @author fuwb
+	 * @author feako
 	 * @param dateTime 时间
 	 */
 	public static long toTimestampLong(String dateTime) {
@@ -144,7 +144,7 @@ public class DateUtil {
 	 *     格式B ：yyyyMMdd
 	 * </pre>
 	 *
-	 * @author fuwb
+	 * @author feako
 	 * @return 默认格式 yyyy-MM-dd
 	 */
 	public static String toBPatternDate(String dateStr) {
@@ -157,7 +157,7 @@ public class DateUtil {
 	 *     格式A ：yyyy-MM-dd HH:mm:ss
 	 *     格式B ：yyyyMMddHHmmss
 	 * </pre>
-	 * @author fuwb
+	 * @author feako
 	 * @return 默认格式 yyyy-MM-dd HH:mm:ss
 	 */
 	public static String toBPatternDateTime(String dateTimeStr) {
@@ -197,7 +197,7 @@ public class DateUtil {
 
 	/**
 	 * 获取今天的日期(yyyy-MM-dd)
-	 * @author fuwb
+	 * @author feako
 	 * @return 今天的日期
 	 */
 	public static String getTodayStr() {
@@ -207,7 +207,7 @@ public class DateUtil {
 	/**
 	 * 获取今天的日期
 	 * <p>pattern格式:  DateUtil.F_YYYYMMDD, DateUtil.F_YYYY_MM_DD</p>
-	 * @author fuwb
+	 * @author feako
 	 * @param pattern 使用DateUtil.F_YYYYMMDD，或DateUtil.F_YYYY_MM_DD
 	 * @return 今天的日期
 	 */
@@ -220,7 +220,7 @@ public class DateUtil {
 
 	/**
 	 * 获取当前日期和时间(yyyy-MM-dd HH:mm:ss)
-	 * @author fuwb
+	 * @author feako
 	 * @return 当前日期和时间(yyyy-MM-dd HH:mm:ss)
 	 */
 	public static String getNowStr() {
@@ -229,7 +229,7 @@ public class DateUtil {
 
 	/**
 	 * 获取当前日期和时间
-	 * @author fuwb
+	 * @author feako
 	 * @param pattern 使用DateUtil.F_YYYY_MM_DD_HH_MM_SS，或DateUtil.F_YYYY_P_MM_P_DD_HH_MM_SS
 	 * @return
 	 */
@@ -633,7 +633,7 @@ public class DateUtil {
 
 	/**
 	 * LocalDate 转成 LocalDateTime
-	 * @author fuwb
+	 * @author feako
 	 * @param localDate
 	 * @return
 	 */

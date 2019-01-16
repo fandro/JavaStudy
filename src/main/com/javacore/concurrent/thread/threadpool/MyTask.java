@@ -1,4 +1,4 @@
-package javacore.thread.threadpool;
+package javacore.concurrent.thread.threadpool;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -6,7 +6,7 @@ import java.util.concurrent.Executors;
 /**
  * TODO
  *
- * @author fuwb
+ * @author feako
  * @date 2018/11/2
  */
 public class MyTask implements Runnable{
@@ -28,8 +28,6 @@ public class MyTask implements Runnable{
             fixedExecutorService.submit(task);
         }
         fixedExecutorService.shutdown();
-
-        ExecutorService executorService = Executors.newSingleThreadExecutor();
 
     }
 }
