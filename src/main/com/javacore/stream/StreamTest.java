@@ -303,9 +303,24 @@ public class StreamTest {
     //------------------------- collect 分组，分区 ---------------------------------------
     /* 使用一个collector执行mutable reduction操作。辅助类 Collectors 提供了很多的collector，可以满足我们日常的需求，
     * 你也可以创建新的collector实现特定的需求。它是一个值得关注的类，你需要熟悉这些特定的收集器，
-    * 如聚合类averagingInt、最大最小值maxByminBy、计数counting、分组groupingBy、字符串连接joining、
+    * 如聚合类averagingInt、最大最小值maxBy minBy、计数counting、分组groupingBy、字符串连接joining、
     * 分组groupingBy、 分区partitioningBy、汇总summarizingInt、化简reducing、转换toXXX等。
     */
+    // maxBy
+    // 求最大年龄
+    //Optional<Student> olderStudent = students.stream().collect(Collectors.maxBy((s1, s2) -> s1.getAge() - s2.getAge()));
+    // 进一步简化
+    //Optional<Student> olderStudent2 = students.stream().collect(Collectors.maxBy(Comparator.comparing(Student::getAge)));
+    // 求最小年龄
+    //Optional<Student> olderStudent3 = students.stream().collect(Collectors.minBy(Comparator.comparing(Student::getAge)));
+    //求年龄总和
+    //int totalAge4 = students.stream().collect(Collectors.summingInt(Student::getAge));
+    //字符串拼接
+    //String names = students.stream().map(Student::getName).collect(Collectors.joining());
+    //String names = students.stream().map(Student::getName).collect(Collectors.joining(", "));
+
+
+
     /**
      * 分组
      */
