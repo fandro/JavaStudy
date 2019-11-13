@@ -33,6 +33,10 @@ import java.util.TimeZone;
  *     epoch: 纪元是从1970年1月1日开始
  *     the epoch of 1970-01-01T00:00:00Z.
  *     Java8的时间API，抽象了时间的概念，用Temporal和TemporalAccessor来定义了时间的基石，划分抽象了和基石相关的时间关系，时间单位TemporalUnit，时间字段TemporalField，时间量TemporalAmount，把这些抽象接口理顺了...会发现用Java8时间API几乎可以满足你任何时间计算，以上是个人理解，仅供参考
+ **
+ *     UTC ： Universal Time Coordinated，协调世界时，又称世界统一时间、世界标准时间、国际协调时间，UCT与格林尼治平均时(GMT, Greenwich Mean Time)一样，都与英国伦敦的本地时相同
+ *     时区：地球上的区域使用同一个时间定义，全球划分为24个时区，东、西各12个时区，规定英国（格林尼治天文台旧址）为本初子午线，即零度经线。
+ *     东时区比GMT时间超前所以数值为正，西时比GMT时间落后所以区为负，东八区：UTC+8，西五区：UTC-5
  * </pre>
  *
  * @author feako
@@ -55,7 +59,13 @@ public class TimeTest {
 
     public static void main(String[] args) {
         ZoneId zoneId = ZoneId.systemDefault();
-        ZoneId zoneId2 = ZoneId.of("UTC+1");
+        //
+        //
+        //协调世界时，又称世界统一时间、世界标准时间、国际协调时间
+        ZoneId zoneId2 = ZoneId.of("UTC+8");
+        ZoneId zoneId3 = ZoneId.of("Asia/shanghai");
+        ZoneId zoneId4 = ZoneId.of("+08:00");
+
 
         // 时区 ZoneOffset，LocalDateTime和这个偏移量创建出一个OffsetDateTime
         LocalDateTime datetime = LocalDateTime.of(2014, Month.JANUARY, 14, 19, 30);

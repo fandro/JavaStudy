@@ -49,6 +49,7 @@ import java.util.stream.Stream;
  *      3.https://blog.csdn.net/qq_34378776/article/details/73521652
  *      4. https://blog.csdn.net/walkerjong/article/details/50633474
  *      5. https://www.cnblogs.com/CarpenterLee/p/6550212.html
+ *      6.https://blog.csdn.net/qq_33605778/article/details/78988392
  *  </pre>
  * @author feako
  * @date 2018/4/27
@@ -756,4 +757,3 @@ Random.ints()
         Pattern.splitAsStream(java.lang.CharSequence)
             JarFile.stream()*/
 }
-
