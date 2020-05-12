@@ -65,6 +65,10 @@ public class TimeTest {
         ZoneId zoneId2 = ZoneId.of("UTC+8");
         ZoneId zoneId3 = ZoneId.of("Asia/shanghai");
         ZoneId zoneId4 = ZoneId.of("+08:00");
+        ZoneId zoneId5 = ZoneId.of("+08");
+        ZoneOffset zoneId6 = ZoneOffset.of("+8");
+        ZoneOffset zoneId7 = ZoneOffset.of("+08");
+
 
 
         // 时区 ZoneOffset，LocalDateTime和这个偏移量创建出一个OffsetDateTime

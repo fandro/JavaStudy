@@ -361,8 +361,10 @@ public class StreamTest {
     @Test
     public void streamToArray() {
         Stream<Person> stream = generateStream(initPersons(), 1);
-        Person[] peoples = stream.toArray(Person[]::new);
-        System.out.println("---- ----");
+        Person[] peoples1 = stream.toArray(p -> new Person[initPersons().size()]);
+        Person[] peoples2 = stream.toArray(Person[]::new);
+        Object[] peoples3 = stream.toArray();
+        System.out.println("---- ---- "+peoples2);
 
     }
 
@@ -374,6 +376,36 @@ public class StreamTest {
         Stream<Person> stream = generateStream(initPersons(), 1);
         List<Person> personList = stream.collect(Collectors.toList());
         System.out.println("---- ----");
+
+    }
+
+    /**
+     * list转map.
+     */
+    @Test
+    public void listToMap() {
+        Stream<Person> stream = generateStream(initPersons(), 1);
+        List<Person> personList = stream.collect(Collectors.toList());
+
+        personList.sort(Comparator.comparing(Person::getAge));
+        List<Person> collect = personList.stream()
+                .sorted(Comparator.comparing(Person::getAge)).collect(Collectors.toList());
+
+        Map<String, Person> personMap = personList.stream()
+                .collect(Collectors.toMap(person -> person.getName(), person -> person));
+
+        Map<String, Person> personMap2 = personList.stream()
+                .collect(Collectors.toMap(Person::getName, person -> person));
+
+        // key重复时选择不覆盖
+        Map<String, Person> personMap3 = personList.stream()
+                .collect(Collectors.toMap(Person::getName, person -> person, (existing, replacement)-> existing));
+
+        // 最后，让我们看看如何返回一个排序后的Map。为此，我们需要对List<Book>进行排序，并使用TreeMap作为mapSupplier参数:
+        Map<String, Person> personMap4 = personList.stream()
+                .sorted(Comparator.comparing(Person::getAge))
+                .collect(Collectors.toMap(Person::getName, Function.identity(), (existing, replacement)-> existing, TreeMap::new));
+
 
     }
 
@@ -544,7 +576,7 @@ public class StreamTest {
     }
 
     @Test
-    public void reduceTest() {
+    public void reduceTest1() {
         List<Integer> list=Arrays.asList(1,2,3,4,5,6,7,8,9,10)  ;
         Integer sum = list.stream().reduce(0, (x, y)->x+y)   ;
         System.out.println(sum);
@@ -554,7 +586,43 @@ public class StreamTest {
         Optional<Integer> sum2 = stream
                 .map(Person::getAge)
                 .reduce(Integer::sum)  ;
-        System.out.println(sum2.get())  ;
+        System.out.println(sum2.orElse(0))  ;
+    }
+
+
+    @Test
+    public void reduceTest2() {
+        List<Integer> numList = Arrays.asList(1,2,3,4,5);
+        // 参数 Optional<T> reduce(BinaryOperator<T> accumulator);
+        // a 为累加结果，b为本次数值
+        int result = numList.stream().reduce((a,b) -> a + b ).get();
+        System.out.println(result);
+    }
+
+    @Test
+    public void reduceTest3() {
+        List<Integer> numList = Arrays.asList(1,2,3,4,5);
+        // 参数 T reduce(T identity, BinaryOperator<T> accumulator);
+        // identity 首次执行时表达式参与的值，并不是stream的第一个元素
+        // 此处表示从10开始累加
+        int result = numList.stream().reduce(10,(a,b) ->  a + b );
+        System.out.println(result);
+    }
+
+    @Test
+    public void reduceTest4() {
+        List<Integer> numList = Arrays.asList(1,2,3,4,5);
+        // 参数 <U> U reduce(U identity,
+        //                 BiFunction<U, ? super T, U> accumulator,
+        //                 BinaryOperator<U> combiner);
+        // 此形式可以进行类型转换
+        ArrayList<String> result = numList.stream().reduce(new ArrayList<String>(),
+                (a, b) -> {
+                    a.add("element-" + Integer.toString(b));
+                    return a;
+                    },
+                (a, b) -> null);
+        System.out.println(result);
     }
 
     /**
@@ -622,7 +690,7 @@ public class StreamTest {
     private int intAggragate() {
         int sum = Stream.of(Month.values()) // 创建流
                          .filter(m -> (m.getValue() == Month.MARCH.getValue() || m.getValue() == Month.AUGUST.getValue())) // 转换成新的流
-                         .mapToInt(m -> m.getValue()) // 转换成新的流
+                         .mapToInt(m -> m.getValue()) // 转换每项为数值的新流
                          .sum();// 聚合
         return sum;
     }
