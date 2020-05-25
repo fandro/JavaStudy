@@ -1,24 +1,18 @@
 package classdiagram;
 
+import classdiagram.entity.Company;
+import classdiagram.entity.Employee;
+
 /**
  * 雇员服务.
  *
  * @author fuwb
- * @date 2020-05-21
+ * @date 2020-05-25
  */
-public class EmployeeService {
+public interface EmployeeService {
+    void save(Employee employee);
 
-    private EmployeeDao employeeDao = new EmployeeDao();
+    Company getCompany(int id);
 
-    public void save(Employee employee) {
-
-    }
-
-    public IdCard getIdCard(int id) {
-        return new IdCard();
-    }
-
-    public void modifyDepartment() {
-        Department department = new Department();
-    }
+    void modifyDepartment();
 }

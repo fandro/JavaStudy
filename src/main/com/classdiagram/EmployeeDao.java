@@ -1,10 +1,17 @@
 package classdiagram;
 
+import classdiagram.entity.Employee;
+
 /**
- * TODO
+ * 雇员dao.
  *
  * @author fuwb
- * @date 2020-05-21
+ * @date 2020-05-25
  */
-public class EmployeeDao {
+public interface EmployeeDao {
+    /**
+     * 保存雇员信息.
+     * @param employee
+     */
+    void save(Employee employee);
 }
