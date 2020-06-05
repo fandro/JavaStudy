@@ -104,6 +104,7 @@ catalina.base_IS_UNDEFINED/**
 /catalina.base_IS_UNDEFINED/
 ##  .gitignore for maven
 target/
-target/**
 *.releaseBackup
 !.gitignore
+/.idea/
+/.idea/libraries/

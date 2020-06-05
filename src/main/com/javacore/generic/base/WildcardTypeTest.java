@@ -12,9 +12,8 @@ import java.util.Map;
  * @author fuwb
  * @date 2020-05-25
  */
-public class WildcardTypeTest<T extends Number>{
+public class WildcardTypeTest{
 
-    //
     /**
      * ? extends Number, map的key必须继承Number，即key类型上界是Number，常做为生产者。
      * ? super String，map的value 必须是String的父类，即value的下界类型是String，常做为消费者。
