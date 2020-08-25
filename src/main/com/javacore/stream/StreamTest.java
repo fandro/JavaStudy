@@ -154,7 +154,7 @@ public class StreamTest {
     }
 
     /**
-     * peek如同foreach只是不会中断流操作,
+     * peek如同foreach,只是不会中断流操作,
      * peek 传参是consumer, 保持原对象不变,
      * map 传参是function，需要返回新对象
      */
