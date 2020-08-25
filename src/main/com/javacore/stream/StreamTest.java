@@ -9,6 +9,7 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
@@ -71,6 +72,7 @@ public class StreamTest {
 
 
     }
+
 
     //------------------------- 筛选与切片 filter,limit,skip,distinct ---------------------------------------
 
@@ -673,6 +675,8 @@ public class StreamTest {
                 stream = Arrays.stream(persons2);
                 break;
             case 9:
+                // 产生stream包含0到10
+                IntStream.range(0, 10);
                 break;
             case 10:
                 break;
@@ -806,22 +810,14 @@ public class StreamTest {
         }
     }
 
-    /*有多种方式生成 Stream Source：
+    /*
+    有多种方式生成 Stream Source：
+    从 Collection 和数组 : Collection.stream(), Collection.parallelStream(), Arrays.stream(T array) or Stream.of()
+    从 BufferedReader   : java.io.BufferedReader.lines()
+    静态工厂             : java.util.stream.IntStream.range(), java.nio.file.Files.walk()
+    自己构建             : java.util.Spliterator
+    其它                : Random.ints(), BitSet.stream(), Pattern.splitAsStream(java.lang.CharSequence), JarFile.stream()
+    */
 
-    从 Collection 和数组
-Collection.stream()
-        Collection.parallelStream()
-        Arrays.stream(T array) or Stream.of()
-    从 BufferedReader
-java.io.BufferedReader.lines()
-    静态工厂
-java.util.stream.IntStream.range()
-        java.nio.file.Files.walk()
-    自己构建
-    java.util.Spliterator
-            其它
-Random.ints()
-        BitSet.stream()
-        Pattern.splitAsStream(java.lang.CharSequence)
-            JarFile.stream()*/
+
 }
