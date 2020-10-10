@@ -82,6 +82,7 @@ public class TimeTest {
 
         // LocalDateTime.parse
         LocalDate parse = LocalDate.parse("2017-01-11", DateTimeFormatter.ofPattern("yyyy-MM-DD"));
+        LocalDate parse2 = LocalDate.parse("2017-01-11", DateTimeFormatter.ISO_LOCAL_DATE);
 
         // LocalDateTime --> LocalDate
         LocalDateTime nowDateTime1 = LocalDateTime.now();
