@@ -1,9 +1,6 @@
-package javacore.stream;
+package com.javacore.stream;
 
 import org.apache.commons.lang3.StringUtils;
-import org.junit.Test;
-
-import java.math.BigDecimal;
 import java.time.Month;
 import java.util.*;
 import java.util.function.Function;
@@ -11,6 +8,7 @@ import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
+import org.junit.jupiter.api.*;
 
 /**
  * stream 流操作

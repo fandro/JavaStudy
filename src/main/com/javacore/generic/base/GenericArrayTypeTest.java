@@ -1,7 +1,5 @@
 package javacore.generic.base;
 
-import org.junit.runners.Parameterized;
-
 import java.lang.reflect.Field;
 import java.lang.reflect.GenericArrayType;
 import java.lang.reflect.ParameterizedType;

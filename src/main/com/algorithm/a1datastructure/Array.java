@@ -2,8 +2,6 @@ package algorithm.a1datastructure;
 
 import org.junit.Assert;
 
-import java.util.Random;
-
 /**
  * 数组
  *
