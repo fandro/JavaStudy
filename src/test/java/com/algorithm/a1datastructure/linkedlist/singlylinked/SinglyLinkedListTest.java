@@ -27,9 +27,7 @@ class SinglyLinkedListTest {
         linkedList.addElement("2-Node");
         linkedList.addElement("3-Node");
         linkedList.addElement("4-Node");
-        linkedList.addElement("5-Node");
-        linkedList.addElement("6-Node");
-        linkedList.addElement("7-Node");
+
     }
 
     @Order(1)
@@ -150,6 +148,10 @@ class SinglyLinkedListTest {
 
     @Test
     void inverstLinkedListHeadTest() {
+        linkedList.addElement("5-Node");
+        linkedList.addElement("6-Node");
+        linkedList.addElement("7-Node");
+
         Node node = linkedList.findElement("4-Node");
         final Node head = linkedList.inverstLinkedList_head(node);
         Node p = head;
@@ -161,6 +163,10 @@ class SinglyLinkedListTest {
 
     @Test
     void inverstLinkedListTest() {
+        linkedList.addElement("5-Node");
+        linkedList.addElement("6-Node");
+        linkedList.addElement("7-Node");
+
         Node node = linkedList.findElement("4-Node");
         Node newNode = linkedList.inverstLinkedList(node);
 
@@ -173,6 +179,13 @@ class SinglyLinkedListTest {
     }
 
 
+    @Test
+    void palindromeTest() {
+        linkedList.addElement("3-Node");
+        linkedList.addElement("2-Node");
+        linkedList.addElement("1-Node");
 
-
+        final boolean palindrome = linkedList.palindrome();
+        assertTrue(palindrome);
+    }
 }

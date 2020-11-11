@@ -228,7 +228,7 @@ public class SinglyLinkedList<E> implements LinkedList<E> {
                 return true;
             }
 
-            while (slow.next !=null && fast.next.next != null) {
+            while (slow.next !=null && fast.next != null && fast.next.next != null) {
                 // 慢指针每次走一步
                 slow = slow.next;
                 // 快指针每次走两步
@@ -236,25 +236,55 @@ public class SinglyLinkedList<E> implements LinkedList<E> {
             }
             // 慢指针为中间结点
             System.out.println("中间结点：" + slow.getElement());
-
-
+            Node leftLink = null;
+            Node rightLink = null;
+            if (fast.next == null) {
+                // fast 结点位置是 1-3-5-7
+                System.out.println("结点数为奇数");
+                // 中间结点下一个结点
+                rightLink = slow.next;
+                // 中间结点左侧进行反转
+                leftLink = inverstLinkedList(slow).next;
+                System.out.println("右侧第一个结点"+ rightLink.getElement());
+                System.out.println("左侧第一个结点"+ leftLink.getElement());
+            } else {
+                // fast.next结点位置是 2-4-6-8
+                // 结点为偶数，slow和slow.next 均为中点
+                System.out.println("结点数为偶数");
+                rightLink = slow.next;
+                leftLink = inverstLinkedList(slow);
+            }
+            return TFResult(rightLink, leftLink);
         }
-        return false;
     }
 
     /**
-     * 判断true or false.
+     * 判断两个链表是否相同.
      * @param left
      * @param right
      * @return
      */
     public boolean TFResult(Node left, Node right) {
-        return false;
+        boolean flag = true;
+        Node l = left;
+        Node r = right;
+
+        while (l != null && r != null) {
+            if (l.getElement() == r.getElement()) {
+                l = l.next;
+                r = r.next;
+                continue;
+            } else {
+                flag = false;
+                break;
+            }
+        }
+        return flag;
     }
 
 
     /**
-     * 带头结点的链表反转
+     * 带头结点的链表反转，结点p右侧进行反转.
      * @param p
      * @return
      */
@@ -287,7 +317,7 @@ public class SinglyLinkedList<E> implements LinkedList<E> {
     }
 
     /**
-     * 无头结点的链表反转
+     * 无头结点的链表反转, 结点p左侧进行反转。
      * @param p
      * @return
      */
