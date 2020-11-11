@@ -106,5 +106,3 @@ catalina.base_IS_UNDEFINED/**
 target/
 *.releaseBackup
 !.gitignore
-/.idea/
-/.idea/libraries/
