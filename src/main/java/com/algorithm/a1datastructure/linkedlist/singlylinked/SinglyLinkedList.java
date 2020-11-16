@@ -284,12 +284,12 @@ public class SinglyLinkedList<E> implements LinkedList<E> {
 
 
     /**
-     * 带头结点的链表反转，结点p右侧进行反转.
+     * 带头结点(哨兵结点)的链表反转，结点p右侧进行反转.
      * @param p
      * @return
      */
     public Node inverstLinkedList_head(Node p) {
-        // 新建一个头结点,不参与反转
+        // 新建一个头结点(哨兵结点),不参与反转
         Node head = new Node("newHead");
         // 头结点指向结点p
         head.next = p;
