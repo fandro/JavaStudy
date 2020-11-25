@@ -14,7 +14,7 @@ class S02InsertionSortTest {
 
     @Test
     void insertionSortTest() {
-        S02InsertionSort insertionSort = new S02InsertionSort();
+        S03InsertionSort insertionSort = new S03InsertionSort();
         int[] array = {8,4,9,3,5,1};
         insertionSort.insertionSort(array);
         assertArrayEquals(new int[]{1,3,4,5,8,9}, array);

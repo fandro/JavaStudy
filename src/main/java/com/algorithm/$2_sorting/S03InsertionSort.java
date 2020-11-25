@@ -2,11 +2,25 @@ package com.algorithm.$2_sorting;
 
 /**
  * 插入排序
+ * 总体思路：
+ *    从未排序区中取出一个数据，在已排序区中找到合适位置插入，并保证已排序区中数据有序
+ * 具体步骤：
+ * 1. 排序过程分为2个区：未排序区和已排序区。
+ * 2. 初始状态：已排序区只有第一个元素，剩下都是未排序区
+ * 3. 从未排序区数据取出一个数据a
+ * 4. 数据A与排序区元素中B依次进行比较
+ * 5. 数据A小于元素中B时元素B后移
+ * 6. 数据A大于等于元素中B时，插入到元素B后面
+ * 7. 排序完成状态：未排序区为空，全部数据在已排序区
+ *
+ * 复杂度：
+ *  空间复杂度： O(1)
+ *  时间复杂度： 最好O(n)、最坏O(n^2)、平均O(n^2)
  *
  * @author fuwb
  * @date 2020-11-19
  */
-public class S02InsertionSort {
+public class S03InsertionSort {
 
     public void insertionSort(int[] array) {
         if (array == null || array.length <= 1) {
