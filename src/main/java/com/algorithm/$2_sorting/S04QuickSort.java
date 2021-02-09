@@ -127,7 +127,7 @@ public class S04QuickSort {
         a[i] = a[end];
         a[end] = tmp;
 
-        System.out.println("i=" + i);
+        //System.out.println("i=" + i);
         return i;
     }
 
