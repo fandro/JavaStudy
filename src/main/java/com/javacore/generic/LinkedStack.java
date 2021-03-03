@@ -7,7 +7,7 @@ package com.javacore.generic;
  * </p>
  *
  * @author fuwb
- * @date 2020-06-01
+ * @since 2020-06-01
  */
 public class LinkedStack<T> {
 

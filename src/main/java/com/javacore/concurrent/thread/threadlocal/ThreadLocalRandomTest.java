@@ -9,7 +9,7 @@ import java.util.concurrent.ThreadLocalRandom;
  * 它是Random的子类，利用了ThreadLocal，它没有public的构造方法，通过静态方法current获取对象。(jdk1.7)
  *
  * @author feako
- * @date 2018/11/28
+ * @since 2018/11/28
  */
 public class ThreadLocalRandomTest {
 

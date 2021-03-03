@@ -5,7 +5,7 @@ package com.javacore.generic.basicsupplier;
  * CountedObject 类可以跟踪自身创建了多少个实例，并通过 toString() 报告这些实例的数量。
  *
  * @author fuwb
- * @date 2020-06-02
+ * @since 2020-06-02
  */
 public class CountedObject {
 

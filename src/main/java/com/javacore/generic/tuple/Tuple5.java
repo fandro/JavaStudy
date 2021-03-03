@@ -4,7 +4,7 @@ package com.javacore.generic.tuple;
  * 含有5种类型的元组
  *
  * @author fuwb
- * @date 2020-06-01
+ * @since 2020-06-01
  */
 public class Tuple5<A, B, C, D, E> extends Tuple4<A, B, C, D>{
     public E e5;

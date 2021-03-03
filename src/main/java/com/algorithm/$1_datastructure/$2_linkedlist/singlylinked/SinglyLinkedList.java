@@ -7,7 +7,7 @@ import com.algorithm.$1_datastructure.$2_linkedlist.Node;
  * 单链表.
  *
  * @author fuwb
- * @date 2020-11-03
+ * @since 2020-11-03
  */
 public class SinglyLinkedList<E> implements LinkedList<E> {
 

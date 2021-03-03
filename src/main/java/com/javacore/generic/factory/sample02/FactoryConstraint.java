@@ -4,7 +4,7 @@ package com.javacore.generic.factory.sample02;
  * TODO
  *
  * @author fuwb
- * @date 2020-06-03
+ * @since 2020-06-03
  */
 public class FactoryConstraint {
     public static void main(String[] args) {

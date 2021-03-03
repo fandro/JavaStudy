@@ -18,7 +18,7 @@ package com.algorithm.$2_sorting;
  *  时间复杂度： 最好O(n)、最坏O(n^2)、平均O(n^2)
  *
  * @author fuwb
- * @date 2020-11-19
+ * @since 2020-11-19
  */
 public class S03InsertionSort {
 

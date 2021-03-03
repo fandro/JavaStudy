@@ -20,7 +20,7 @@ package com.algorithm.$2_sorting;
  *  时间复杂度： 最好、最坏、平均都是 O(nlogn)
  *
  * @author fuwb
- * @date 2020-11-23
+ * @since 2020-11-23
  */
 public class S03MergeSort {
 

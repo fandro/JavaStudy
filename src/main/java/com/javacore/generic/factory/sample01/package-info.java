@@ -6,6 +6,6 @@
  * https://lingcoder.gitee.io/onjava8/#/book/20-Generics?id=%e5%88%9b%e5%bb%ba%e7%b1%bb%e5%9e%8b%e7%9a%84%e5%ae%9e%e4%be%8b
  *
  * @author fuwb
- * @date 2020-06-03
+ * @since 2020-06-03
  */
 package com.javacore.generic.factory.sample01;

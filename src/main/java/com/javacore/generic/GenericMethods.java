@@ -7,7 +7,7 @@ import java.util.List;
  * 泛型方法.
  *
  * @author fuwb
- * @date 2020-06-02
+ * @since 2020-06-02
  */
 public class GenericMethods {
 

@@ -4,7 +4,7 @@ package com.javacore.generic.settool;
  * TODO
  *
  * @author fuwb
- * @date 2020-06-02
+ * @since 2020-06-02
  */
 public enum Watercolors {
     ZINC, LEMON_YELLOW, MEDIUM_YELLOW, DEEP_YELLOW,

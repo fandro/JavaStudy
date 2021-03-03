@@ -4,7 +4,7 @@ package com.classdiagram.entity;
  * 打印机.
  *
  * @author fuwb
- * @date 2020-05-25
+ * @since 2020-05-25
  */
 public class Printer {
     private String name;

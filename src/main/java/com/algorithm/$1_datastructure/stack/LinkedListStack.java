@@ -4,7 +4,7 @@ package com.algorithm.$1_datastructure.stack;
  * 基于链表实现的栈-链表栈.
  * 新加入结点作为头结点
  * @author fuwb
- * @date 2020-11-16
+ * @since 2020-11-16
  */
 public class LinkedListStack {
 

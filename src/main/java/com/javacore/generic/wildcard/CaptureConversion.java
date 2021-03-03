@@ -5,7 +5,7 @@ package com.javacore.generic.wildcard;
  * 因为未指定的通配符类型被捕获，并被转换为确切类型
  *
  * @author fuwb
- * @date 2020-06-03
+ * @since 2020-06-03
  */
 public class CaptureConversion {
 

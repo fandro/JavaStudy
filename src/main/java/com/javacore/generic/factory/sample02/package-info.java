@@ -3,6 +3,6 @@
  * 包含了两种创建工厂的方法。
  *
  * @author fuwb
- * @date 2020-06-03
+ * @since 2020-06-03
  */
 package com.javacore.generic.factory.sample02;

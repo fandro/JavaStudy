@@ -6,7 +6,7 @@ import java.lang.reflect.Array;
  * TODO
  *
  * @author fuwb
- * @date 2020-06-03
+ * @since 2020-06-03
  */
 public class GenericArrayWithTypeToken<T> {
     private T[] array;

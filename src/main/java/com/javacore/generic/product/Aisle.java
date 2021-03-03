@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * 仓库中过道.
  *
  * @author fuwb
- * @date 2020-06-02
+ * @since 2020-06-02
  */
 public class Aisle extends ArrayList<Shelf> {
 

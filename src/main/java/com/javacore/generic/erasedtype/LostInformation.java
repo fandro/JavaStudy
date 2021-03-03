@@ -23,7 +23,7 @@ class Particle<POSITION, MOMENTUM> {}
  * 泛型擦除，信息丢失.
  *
  * @author fuwb
- * @date 2020-06-02
+ * @since 2020-06-02
  */
 public class LostInformation {
     public static void main(String[] args) {

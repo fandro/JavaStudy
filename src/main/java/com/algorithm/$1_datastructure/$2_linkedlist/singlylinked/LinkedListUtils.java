@@ -10,7 +10,7 @@ import com.algorithm.$1_datastructure.$2_linkedlist.Node;
  * 5. 求链表中间结点
  *
  * @author fuwb
- * @date 2020-11-11
+ * @since 2020-11-11
  */
 public class LinkedListUtils {
 

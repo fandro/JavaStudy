@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * TODO
  *
  * @author fuwb
- * @date 2020-11-05
+ * @since 2020-11-05
  */
 class GenericArrayTest {
 

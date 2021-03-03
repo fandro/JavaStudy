@@ -5,7 +5,7 @@ package com.algorithm.$1_datastructure.$2_linkedlist;
  * 基于链表的LRU算法.
  * 参考: https://github.com/wangzheng0822/algo/blob/master/java/06_linkedlist/LRUBaseLinkedList.java
  * @author fuwb
- * @date 2020-11-13
+ * @since 2020-11-13
  */
 public class LRUBaseLinkedList<T> {
     private final static Integer DEFAULT_CAPACITY = 8;

@@ -5,7 +5,7 @@ package com.javacore.generic.templatemethod;
  * 该构造函数又调用抽象的 create() 方法。这种创建方式可以在子类中定义，同时建立 T 的类型。
  *
  * @author fuwb
- * @date 2020-06-03
+ * @since 2020-06-03
  */
 abstract class GenericWithCreate<T> {
     final T element;

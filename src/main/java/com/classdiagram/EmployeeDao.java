@@ -6,7 +6,7 @@ import com.classdiagram.entity.Employee;
  * 雇员dao.
  *
  * @author fuwb
- * @date 2020-05-25
+ * @since 2020-05-25
  */
 public interface EmployeeDao {
     /**

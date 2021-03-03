@@ -4,7 +4,7 @@ package com.algorithm.$1_datastructure.$3_queue;
  * TODO
  *
  * @author fuwb
- * @date 2020-11-17
+ * @since 2020-11-17
  */
 public class CircularQueueBaseOnArray {
 

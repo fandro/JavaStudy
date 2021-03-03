@@ -11,7 +11,7 @@ import java.util.Map;
  * 泛型数组类型.
  *
  * @author fuwb
- * @date 2020-05-25
+ * @since 2020-05-25
  */
 public class GenericArrayTypeTest {
 

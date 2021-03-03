@@ -4,7 +4,7 @@ package com.algorithm.$1_datastructure.$1_array;
  * 泛型数组.
  *
  * @author fuwb
- * @date 2020-11-05
+ * @since 2020-11-05
  */
 public class GenericArray<T> {
     private int size;

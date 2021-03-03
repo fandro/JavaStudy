@@ -10,7 +10,7 @@ import java.util.stream.Stream;
  *    指的是这样一个数列：1、1、2、3、5、8、13、21、34、……在数学上，斐波那契数列以如下被以递推的方法定义：F(1)=1，F(2)=1, F(n)=F(n - 1)+F(n - 2)（n ≥ 3，n ∈ N*）
  * </pre>
  * @author fuwb
- * @date 2020-06-01
+ * @since 2020-06-01
  */
 public class Fibonacci implements Supplier<Integer> {
 

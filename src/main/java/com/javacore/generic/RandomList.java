@@ -9,7 +9,7 @@ import java.util.stream.IntStream;
  * 调用select(),随机返回集合中的一个元素。
  *
  * @author fuwb
- * @date 2020-06-01
+ * @since 2020-06-01
  */
 public class RandomList<T> extends ArrayList<T> {
     private Random rand = new Random(47);

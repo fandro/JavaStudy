@@ -12,7 +12,7 @@ import java.util.Map;
  * 参考: https://github.com/wangzheng0822/algo/blob/master/java/06_linkedlist/LRUBasedArray.java
  *
  * @author fuwb
- * @date 2020-11-13
+ * @since 2020-11-13
  */
 public class LRUBasedArray<T> {
     /**

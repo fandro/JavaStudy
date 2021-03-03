@@ -7,7 +7,7 @@ import java.util.Map;
  * 无界通配符02。
  *
  * @author fuwb
- * @date 2020-06-03
+ * @since 2020-06-03
  */
 public class UnboundedWildcards2 {
     static Map map1;

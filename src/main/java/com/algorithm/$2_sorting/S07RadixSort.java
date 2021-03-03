@@ -4,7 +4,7 @@ package com.algorithm.$2_sorting;
  * 基数排序.
  *
  * @author fuwb
- * @date 2021-02-07
+ * @since 2021-02-07
  */
 public class S07RadixSort {
 

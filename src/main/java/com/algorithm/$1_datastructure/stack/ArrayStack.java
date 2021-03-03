@@ -4,7 +4,7 @@ package com.algorithm.$1_datastructure.stack;
  * 基于数组实现栈操作(顺序栈).
  *
  * @author fuwb
- * @date 2020-11-16
+ * @since 2020-11-16
  */
 public class ArrayStack {
     /**

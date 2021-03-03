@@ -4,7 +4,7 @@ package com.javacore.generic.tuple;
  * 元组测试类.
  *
  * @author fuwb
- * @date 2020-06-01
+ * @since 2020-06-01
  */
 public class TupleTest {
     static Tuple2<String, Integer> f(){

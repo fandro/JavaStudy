@@ -9,7 +9,7 @@ import static com.javacore.generic.settool.Watercolors.*;
  * TODO
  *
  * @author fuwb
- * @date 2020-06-02
+ * @since 2020-06-02
  */
 public class WatercolorSets {
     public static void main(String[] args) {

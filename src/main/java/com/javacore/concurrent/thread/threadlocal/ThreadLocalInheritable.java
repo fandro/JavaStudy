@@ -13,7 +13,7 @@ package com.javacore.concurrent.thread.threadlocal;
  * 因为池中的“子线程”根本不是当前线程创建的，当前线程设定的ThreadLocal变量也就无法传递给线程池中的线程。
  *
  * @author feako
- * @date 2018/11/30
+ * @since 2018/11/30
  */
 public class ThreadLocalInheritable {
     private static ThreadLocal<String> userResource = new InheritableThreadLocal<String>();

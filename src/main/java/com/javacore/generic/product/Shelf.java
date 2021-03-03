@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * 仓库中的货架.
  *
  * @author fuwb
- * @date 2020-06-02
+ * @since 2020-06-02
  */
 public class Shelf extends ArrayList<Product> {
     /**

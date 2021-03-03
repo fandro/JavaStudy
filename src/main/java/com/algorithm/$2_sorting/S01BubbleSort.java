@@ -19,7 +19,7 @@ import java.util.Arrays;
  *  时间复杂度： 最好O(n)、最坏O(n^2)、平均O(n^2)
  *
  * @author fuwb
- * @date 2020-08-25
+ * @since 2020-08-25
  */
 public class S01BubbleSort {
 

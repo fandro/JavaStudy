@@ -40,7 +40,7 @@ import java.util.TimeZone;
  * </pre>
  *
  * @author feako
- * @date 2017/11/16
+ * @since 2017/11/16
  */
 public class TimeTest {
 

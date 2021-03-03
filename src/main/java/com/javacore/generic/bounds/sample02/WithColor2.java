@@ -6,7 +6,7 @@ import com.javacore.generic.bounds.sample01.HasColor;
  * TODO
  *
  * @author fuwb
- * @date 2020-06-03
+ * @since 2020-06-03
  */
 public class WithColor2<T extends HasColor> extends HoldItem<T> {
 

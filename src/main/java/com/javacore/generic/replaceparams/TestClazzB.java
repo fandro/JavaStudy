@@ -7,7 +7,7 @@ import java.util.List;
  * TODO
  *
  * @author fuwb
- * @date 2020-06-04
+ * @since 2020-06-04
  */
 public class TestClazzB<U,K> // TestClazzB 实例化时指定实际类型
         extends TestClazzA<String> // 继承时指定实际类型

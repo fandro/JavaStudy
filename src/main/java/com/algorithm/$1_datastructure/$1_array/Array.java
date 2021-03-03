@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * 数组
  *
  * @author fuwb
- * @date 2020-09-17
+ * @since 2020-09-17
  */
 public class Array {
 

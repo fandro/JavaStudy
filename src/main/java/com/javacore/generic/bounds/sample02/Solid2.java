@@ -8,7 +8,7 @@ import com.javacore.generic.bounds.sample01.Weight;
  * TODO
  *
  * @author fuwb
- * @date 2020-06-03
+ * @since 2020-06-03
  */
 public class Solid2<T extends Coord & HasColor & Weight> extends WithColorCoord2<T>  {
 

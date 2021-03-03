@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * 单链表。
  *
  * @author fuwb
- * @date 2020-11-03
+ * @since 2020-11-03
  */
 class SinglyLinkedListTest {
 

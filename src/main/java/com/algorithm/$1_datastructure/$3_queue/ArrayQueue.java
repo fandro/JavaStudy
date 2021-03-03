@@ -5,7 +5,7 @@ package com.algorithm.$1_datastructure.$3_queue;
  * 使用两个指针：头指针和尾指针，头指针出队时
  *
  * @author fuwb
- * @date 2020-11-17
+ * @since 2020-11-17
  */
 public class ArrayQueue {
 

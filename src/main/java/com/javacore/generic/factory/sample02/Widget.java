@@ -7,7 +7,7 @@ import java.util.function.Supplier;
  * Widget 包含一个内部类，它是一个工厂
  *
  * @author fuwb
- * @date 2020-06-03
+ * @since 2020-06-03
  */
 public class Widget {
     private int id;

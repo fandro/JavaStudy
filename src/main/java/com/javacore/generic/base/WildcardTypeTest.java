@@ -10,7 +10,7 @@ import java.util.Map;
  * 通配符类型。
  *
  * @author fuwb
- * @date 2020-05-25
+ * @since 2020-05-25
  */
 public class WildcardTypeTest{
 

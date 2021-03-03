@@ -4,7 +4,7 @@ package com.algorithm.$1_datastructure.$2_linkedlist;
  * 链表中的结点.
  *
  * @author fuwb
- * @date 2020-11-03
+ * @since 2020-11-03
  */
 public class Node<E> {
     /**

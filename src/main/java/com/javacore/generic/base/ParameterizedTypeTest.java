@@ -9,7 +9,7 @@ import java.util.Map;
  * 参数化类型 ParameterizedType.
  *
  * @author fuwb
- * @date 2020-05-23
+ * @since 2020-05-23
  */
 public class ParameterizedTypeTest {
 

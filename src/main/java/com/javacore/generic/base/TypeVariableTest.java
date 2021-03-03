@@ -12,7 +12,7 @@ import static java.lang.annotation.ElementType.*;
  * 类型变量 TypeVariable .
  *
  * @author fuwb
- * @date 2020-05-25
+ * @since 2020-05-25
  */
 public class TypeVariableTest<T extends @TypeVariableTest.Custom Number & Serializable> {
 

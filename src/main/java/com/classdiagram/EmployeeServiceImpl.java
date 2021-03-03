@@ -8,7 +8,7 @@ import com.classdiagram.entity.Employee;
  * 雇员服务.
  *
  * @author fuwb
- * @date 2020-05-21
+ * @since 2020-05-21
  */
 public class EmployeeServiceImpl implements EmployeeService{
 

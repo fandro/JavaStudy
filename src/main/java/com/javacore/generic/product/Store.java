@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * 包含关系：仓库store包含过道Aisle，过道Aisle包含货架Shelf，货架Shelf包含商品product.
  *
  * @author fuwb
- * @date 2020-06-02
+ * @since 2020-06-02
  */
 public class Store extends ArrayList<Aisle> {
     // 收银台

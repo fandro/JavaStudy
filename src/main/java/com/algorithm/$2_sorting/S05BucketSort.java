@@ -17,7 +17,7 @@ package com.algorithm.$2_sorting;
  *  时间复杂度： 最好、最坏、平均都是 O(n)
  *
  * @author fuwb
- * @date 2021-02-07
+ * @since 2021-02-07
  */
 public class S05BucketSort {
 

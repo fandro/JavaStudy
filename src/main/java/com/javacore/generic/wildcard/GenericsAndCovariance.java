@@ -7,7 +7,7 @@ import java.util.List;
  * TODO
  *
  * @author fuwb
- * @date 2020-06-03
+ * @since 2020-06-03
  */
 public class GenericsAndCovariance {
     public static void main(String[] args) {

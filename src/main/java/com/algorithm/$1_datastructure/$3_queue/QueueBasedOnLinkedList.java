@@ -4,7 +4,7 @@ package com.algorithm.$1_datastructure.$3_queue;
  * 基于链表实现的队列.
  *
  * @author fuwb
- * @date 2020-11-17
+ * @since 2020-11-17
  */
 public class QueueBasedOnLinkedList {
 

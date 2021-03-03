@@ -9,7 +9,7 @@ import java.util.List;
  *     https://lingcoder.gitee.io/onjava8/#/book/20-Generics?id=%e6%b3%9b%e5%9e%8b%e6%93%a6%e9%99%a4
  * </p>
  * @author fuwb
- * @date 2020-06-02
+ * @since 2020-06-02
  */
 public class ErasedTypeEquivalence {
 

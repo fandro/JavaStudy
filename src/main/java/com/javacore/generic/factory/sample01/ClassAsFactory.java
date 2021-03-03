@@ -6,7 +6,7 @@ import java.util.function.Supplier;
  * TODO
  *
  * @author fuwb
- * @date 2020-06-03
+ * @since 2020-06-03
  */
 public class ClassAsFactory<T> implements Supplier<T> {
     Class<T> kind;

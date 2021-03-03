@@ -7,7 +7,7 @@ package com.javacore.concurrent.thread.threadlocal;
  * 并且建议我们ThreadLocal最好是 private static 修饰的成员
  *
  * @author feako
- * @date 2018/11/26
+ * @since 2018/11/26
  */
 public class ThreadLocalTest {
 

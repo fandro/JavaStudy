@@ -16,7 +16,7 @@ package com.algorithm.$2_sorting;
  *  时间复杂度： 最好、最坏、平均都是O(n^2)
  *
  * @author fuwb
- * @date 2020-11-20
+ * @since 2020-11-20
  */
 public class S02SelectionSort {
 

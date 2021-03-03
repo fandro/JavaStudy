@@ -16,7 +16,7 @@ import java.util.function.Supplier;
  * </pre>
  *
  * @author fuwb
- * @date 2020-06-02
+ * @since 2020-06-02
  */
 public class BasicSupplier<T> implements Supplier<T> {
 

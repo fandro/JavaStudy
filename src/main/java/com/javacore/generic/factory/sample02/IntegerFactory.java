@@ -7,7 +7,7 @@ import java.util.function.Supplier;
  * IntegerFactory 本身就是通过实现 Supplier<Integer> 的工厂
  *
  * @author fuwb
- * @date 2020-06-03
+ * @since 2020-06-03
  */
 public class IntegerFactory implements Supplier<Integer> {
     private int i = 0;

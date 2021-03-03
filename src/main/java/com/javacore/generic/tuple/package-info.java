@@ -9,6 +9,6 @@
  *  参考：https://lingcoder.gitee.io/onjava8/#/book/20-Generics?id=%e4%b8%80%e4%b8%aa%e5%85%83%e7%bb%84%e7%b1%bb%e5%ba%93
  * </p>
  * @author fuwb
- * @date 2020-06-01
+ * @since 2020-06-01
  */
 package com.javacore.generic.tuple;

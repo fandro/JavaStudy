@@ -4,7 +4,7 @@ package com.classdiagram.entity;
  * 人.
  *
  * @author fuwb
- * @date 2020-05-21
+ * @since 2020-05-21
  */
 public class Person {
     private String name;

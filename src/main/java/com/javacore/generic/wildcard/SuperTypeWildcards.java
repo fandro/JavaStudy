@@ -8,7 +8,7 @@ import java.util.List;
  * 方法是指定 <？super MyClass> ，或者甚至使用类型参数： <？super T>
  *
  * @author fuwb
- * @date 2020-06-03
+ * @since 2020-06-03
  */
 public class SuperTypeWildcards {
 
